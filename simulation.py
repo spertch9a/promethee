@@ -56,8 +56,8 @@ def run_simulations():
 		'preference reversal in promethee II frequency']);
 
 	for preference_function in preference_functions:
-		print "PREFERENCE FUNCTION:"
-		print preference_function;
+		print ("PREFERENCE FUNCTION:")
+		print (preference_function);
 		print("###################");
 		parameters_array = generate_preference_function_parameters(DELTA, preference_function);
 		print(len(parameters_array));
@@ -91,17 +91,17 @@ def run_simulations():
 				print("number of ranks reversals for promethee I:")
 				print(sum(promethee_I_rr));
 				print("Promethee I rr frequency:");
-				print promethee_I_rr_frequency;
+				print (promethee_I_rr_frequency);
 				print("promethee I preference reversals:");
-				print promethee_I_preference_reversal;
+				print (promethee_I_preference_reversal);
 				print("promethee I incomparability change:");
-				print promethee_I_incomparability_freq;
+				print (promethee_I_incomparability_freq);
 				print("number of ranks reversals in total order for promethee II:")
 				print(sum(promethee_II_rr));
 				print("Promethee II rr frequency:");
-				print promethee_II_rr_frequency;
+				print (promethee_II_rr_frequency);
 				print("Number of alternatives for which RR occurred in promethee II");
-				print promethee_II_rr_specs_frequency;
+				print (promethee_II_rr_specs_frequency);
 
 			results_array.append([
 				number_simulations,
@@ -123,7 +123,7 @@ def run_simulations():
 
 	print("PRINTING RESULTS");
 	for result in results_array:
-		print result;
+		print (result);
 		print("\n");
 
 	print("WRITING results to file" + path_to_file+file_name);

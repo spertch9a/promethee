@@ -22,7 +22,7 @@ def generate_preference_function_parameters(delta, function):
 				objects_array.append({'p':0, 'q': q[x], 'sigma': 0});
 		elif function == 'gaussian':
 			sigma = numpy.arange(0,1,delta);
-			print sigma;
+			print (sigma);
 			for x in range(0,len(sigma)):
 				objects_array.append({'p':0, 'q': 0, 'sigma': sigma[x]});
 		elif function == 'usual':

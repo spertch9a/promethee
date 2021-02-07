@@ -60,7 +60,7 @@ class Promethee:
 			print (self.phi_global[x])
 		self.prometheeII = sorted(range(len(self.phi_global)),key = lambda k: self.phi_global[k], reverse= True);
 		for x in range(len(self.prometheeII)):
-			print self.prometheeII[x];
+			print (self.prometheeII[x]);
 	def getPrometheeIRanking(self):
 		print("promethee I")
 	def assignShapeFunctions(self):
